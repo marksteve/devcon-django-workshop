@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body, input, select, button, textarea {
+  font: 20px/1.5 sans-serif;
+}
+
+body {
+  background: crimson;
+  padding: 3rem;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, p {
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+h1, h2, h3, a {
+  color: crimson;
+  font-weight: normal;
+}
+
+h1 {
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+}
+
+label {
+  display: block;
+}
+
+input[type=text],
+input[type=password],
+textarea {
+  width: 100%;
+  border: 1px solid crimson;
+  padding: 0 5px;
+}
+
+input[type=text],
+input[type=password] {
+  font-size: 2rem;
+}
+
+.helptext {
+  font-size: 0.8rem;
+}
+
+button {
+  background: crimson;
+  border: 0;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: white;
+  padding: 0 1rem;
+}
+
+.errorlist {
+  list-style: none;
+  margin: 0;
+  border-top: 1px solid;
+  padding: 1rem;
+  left: 100%;
+  position: absolute;
+  font-size: 0.8rem;
+  color: white;
+  width: 20rem;
+}
+
+.page {
+  width: 50rem;
+  margin: 0 auto;
+}
+
+.app {
+  width: 30rem;
+  min-height: 30rem;
+  padding: 1.5em 3rem;
+  background: white;
+  position: relative;
+}
+
+.tindero {
+  text-align: center;
+  position: relative;
+}
+
+.tindero .photo {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border: 1px solid crimson;
+}
+
+.tindero img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.tindero .name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.tindero .bio {
+  text-align: left;
+}
+
+.tindero a {
+  position: absolute;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 2;
+  padding: 0 1rem;
+  top: 33%;
+  color: white;
+  border-top: 1px solid;
+}
+
+.tindero .nope {
+  right: 100%;
+  margin-right: 3rem;
+}
+
+.tindero .nice {
+  left: 100%;
+  margin-left: 3rem;
+}
+
+.match {
+  text-align: center;
+}
+
+.match .photo {
+  display: inline-block;
+  width: 40%;
+  padding-bottom: 40%;
+  position: relative;
+  overflow: hidden;
+  margin: 0 1rem;
+  border: 1px solid crimson;
+  border-radius: 50%;
+}
+
+.match img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}

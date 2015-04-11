@@ -1,22 +1,22 @@
-<!doctype html>
-<html>
-<body>
+{% extends "base.html" %}
+{% block content %}
 <div class="tindero">
   {% if tindero %}
-  <img src="{{ tindero.userprofile.photo.url }}">
+  <div class="photo">
+    <img src="{{ tindero.userprofile.photo.url }}">
+  </div>
   <div class="name">
     {{ tindero.username }}
   </div>
   <div class="bio">{{ tindero.userprofile.bio }}</div>
-  <a href="{% url "nice" user_id=tindero.id %}">
-    Nice
-  </a>
-  <a href="{% url "nope" user_id=tindero.id %}">
+  <a class="nope" href="{% url "nope" user_id=tindero.id %}">
     Nope
+  </a>
+  <a class="nice" href="{% url "nice" user_id=tindero.id %}">
+    Nice
   </a>
   {% else %}
   Wait for more people to join!
   {% endif %}
 </div>
-</body>
-</html>
+{% endblock %}

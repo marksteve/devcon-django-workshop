@@ -1,12 +1,16 @@
-<!doctype html>
-<html>
-<body>
-<h2>It's a match!</h2>
-<p>
-  <img src="{{ user.userprofile.photo.url }}">
-  <img src="{{ match.userprofile.photo.url }}">
-</p>
-<p>You and {{ match.username }} like each other!</p>
-<p><a href="{% url "index" %}">Play more!</a></p>
-</body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+<div class="match">
+  <h2>It's a match!</h2>
+  <p>
+    <div class="photo">
+      <img src="{{ user.userprofile.photo.url }}">
+    </div>
+    <div class="photo">
+      <img src="{{ match.userprofile.photo.url }}">
+    </div>
+  </p>
+  <p>You and {{ match.username }} like each other!</p>
+  <p><a href="{% url "index" %}">Play more!</a></p>
+</div>
+{% endblock %}
